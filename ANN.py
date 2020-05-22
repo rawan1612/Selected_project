@@ -30,7 +30,7 @@ print(type(Y))
 print("\n Actual Class Labels : ", Y)
 
 
-# Class Label encoding M & B to 1 & 0
+# Class Label encoding 2 & 4 to 0 & 1
 encoder = LabelEncoder()
 Y = encoder.fit_transform(Y)
 print('After Encoding : ', Y)
@@ -167,35 +167,3 @@ class NeuralNetwork:
 
 
 nn = NeuralNetwork(X_train, Y_train, X_test, Y_test)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

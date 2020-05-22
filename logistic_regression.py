@@ -4,6 +4,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn import metrics
+
 
 # Importing the dataset
 dataset = pd.read_csv('breast-cancer-wisconsin.csv')
@@ -68,3 +70,8 @@ plt.xlabel('clump_thickness')
 plt.ylabel('unif_cell_size')
 plt.legend()
 plt.show()
+
+
+print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
+
+print("Accuracy in percentage:",(metrics.accuracy_score(y_test, y_pred)*100)," %")
