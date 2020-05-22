@@ -68,10 +68,15 @@ for i, j in enumerate(np.unique(y_set)):
 plt.title('Logistic Regression (Test set)')
 plt.xlabel('clump_thickness')
 plt.ylabel('unif_cell_size')
-plt.legend()
-plt.show()
-
 
 print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
 
 print("Accuracy in percentage:",(metrics.accuracy_score(y_test, y_pred)*100)," %")
+
+
+
+plt.legend()
+plt.show()
+
+
+
